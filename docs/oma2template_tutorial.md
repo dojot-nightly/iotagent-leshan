@@ -37,3 +37,6 @@ After generating the output file, perform these steps:
     # You can use your preference difftool instead of meld
     meld models/3311_preedit.json models/3311.json
     
+    python3 oma2template.py -i models/3303.xml -m 2 -o models/3303_preedit.json
+    meld models/3303_preedit.json models/3311.
+

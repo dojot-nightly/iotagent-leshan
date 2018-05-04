@@ -121,7 +121,7 @@ public class DeviceManager {
      */
     public JsonElement GetDeviceFromDeviceManager(String service, String deviceModel, String serialNumber) {
         String token = TenancyManager.GetJwtToken(service);
-        String query = "?attr=device_type=" + deviceModel + "&serial_number=" + serialNumber;
+        String query = "?attr=device_type=" + deviceModel + "&attr=serial_number=" + serialNumber;
         String url = this.deviceUrl + query;
 
         try {
